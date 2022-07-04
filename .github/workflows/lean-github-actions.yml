@@ -4,6 +4,5 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Build
-        uses: actions/checkout@v3
-        run: dotnet build
+      - name: Echo
+        run: echo Hello!
