@@ -18,5 +18,5 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
       
-      - name: Publish
-        run: dotnet publish -o publish -c Release -r linux-x64 --self-contained true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true
+      - name: Test
+        run: dotnet test
