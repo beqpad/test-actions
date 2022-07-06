@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0546ccab-ad93-4574-9950-127950de3ea9": {
+      "ProjectGuid": "0546ccab-ad93-4574-9950-127950de3ea9",
+      "DisplayName": "Tests",
+      "ColorIndex": 0
+    },
+    "f50067a8-76da-4f97-bf39-74e76ce409ab": {
+      "ProjectGuid": "f50067a8-76da-4f97-bf39-74e76ce409ab",
+      "DisplayName": "test-actions",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
