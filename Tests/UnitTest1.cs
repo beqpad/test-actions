@@ -13,6 +13,6 @@ public class UnitTest1
         var s = m.GetValue();
 
         // throws assert
-        Assert.Equal("aaaa", s);
+        Assert.Equal("abcde", s);
     }
 }
