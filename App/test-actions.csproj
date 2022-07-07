@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>test_actions</RootNamespace>
-    <AssemblyVersion>1.0.0.20706</AssemblyVersion>
+    <AssemblyVersion>1.0.0.20708</AssemblyVersion>
   </PropertyGroup>
 
 </Project>
