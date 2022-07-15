@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,3 +25,21 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+
+
+unsafe
+{
+    var a = new Struct1();
+    var p = (byte*)&a;
+
+    *(p + 2) = (byte)0x00;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct Struct1
+{
+    public Struct1() { }
+
+    public byte A = 0x10;
+}
