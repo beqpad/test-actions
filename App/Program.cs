@@ -28,13 +28,13 @@ app.Run();
 
 
 
-unsafe
-{
-    var a = new Struct1();
-    var p = (byte*)&a;
+// unsafe
+// {
+//     var a = new Struct1();
+//     var p = (byte*)&a;
 
-    *(p + 2) = (byte)0x00;
-}
+//     *(p + 2) = (byte)0x00;
+// }
 
 [StructLayout(LayoutKind.Sequential)]
 public struct Struct1
