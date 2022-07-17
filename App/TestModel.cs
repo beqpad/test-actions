@@ -11,4 +11,9 @@ public class TestModel
     public Action<string> Predicate { get; set; }
     
     public void FireAction(string? message) => Predicate(message);
+
+    private Dictionary<string, string> _dic = new ();
+
+    public string GetValue(string key)
+        => _dic.ContainsKey(key) ? _dic[key] : string.Empty;
 }
