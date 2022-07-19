@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace test_actions;
 
 public class TestModel
@@ -16,4 +18,18 @@ public class TestModel
 
     public string GetValue(string key)
         => _dic.ContainsKey(key) ? _dic[key] : string.Empty;
+    
+    public string GenerateString()
+    {
+        var result = new List<string>();
+
+        for (var i = 0; i < 10; i++)
+        {
+            var builder = new StringBuilder();
+            builder.AppendLine("number: " + i);
+            result.Add(builder.ToString());
+        }
+
+        return string.Join(", ", result);
+    }
 }

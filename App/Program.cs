@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using test_actions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,13 +29,17 @@ app.Run();
 
 
 
-// unsafe
-// {
-//     var a = new Struct1();
-//     var p = (byte*)&a;
+var model = new TestModel();
+Console.WriteLine("TestModel:" + model);
 
-//     *(p + 2) = (byte)0x00;
-// }
+
+unsafe
+{
+    var a = new Struct1();
+    var p = (byte*)&a;
+
+    *(p + 2) = (byte)0x00;
+}
 
 [StructLayout(LayoutKind.Sequential)]
 public struct Struct1
