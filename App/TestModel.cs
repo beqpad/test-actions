@@ -30,8 +30,6 @@ public class TestModel
             result.Add(builder.ToString());
         }
 
-        
-
         return string.Join(", ", result);
     }
 }
